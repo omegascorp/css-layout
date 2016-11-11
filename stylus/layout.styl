@@ -1,0 +1,119 @@
+make-layout($prefix, $separator, $postfix) {
+  // horizontal layout
+  .{$prefix}layout{$separator}h{$postfix} {
+    display: flex;
+    flex-direction: row;
+  }
+
+  // reverse horizontal layout
+  .{$prefix}layout{$separator}h{$separator}reverse{$postfix} {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  // vertical layout
+  .{$prefix}layout{$separator}v{$postfix} {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // reverse vertical layout
+  .{$prefix}layout{$separator}v{$separator}reverse{$postfix} {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  // hide an element
+  .{$prefix}hide{$postfix} {
+    display: none;
+  }
+
+  for $i in (1..12) {
+    // grow of element
+    .{$prefix}grow{$separator}{$i}{$postfix} {
+      flex-grow: $i;
+    }
+
+    // shrink of elements
+    .{$prefix}shrink{$separator}{$i}{$postfix} {
+      flex-shrink: $i;
+    }
+
+    // order of elements
+    .{$prefix}order{$separator}{$i}{$postfix} {
+      order: $i;
+    }
+
+    // 12 column grid
+    .{$prefix}grid{$separator}{$i}{$postfix} {
+      flex-basis: 100% / 12 * $i;
+      max-width: 100% / 12 * $i;
+    }
+  }
+
+  .{$prefix}grow{$postfix} {
+    flex-grow: 1;
+  }
+
+  .{$prefix}grow{$separator}none{$postfix} {
+    flex-grow: none;
+  }
+
+  .{$prefix}shrink{$postfix} {
+    flex-shrink: 1;
+  }
+
+  .{$prefix}shrink{$separator}none{$postfix} {
+    flex-shrink: none;
+  }
+
+  // alignment in cross axis
+  .{$prefix}start{$postfix} {
+    align-items: flex-start;
+  }
+
+  .{$prefix}center{$postfix}, .{$prefix}center{$separator}center{$postfix} {
+    align-items: center;
+  }
+
+  .{$prefix}end{$postfix} {
+    align-items: flex-end;
+  }
+
+  .{$prefix}stretch{$postfix} {
+    align-items: stretch;
+  }
+
+  // alignment in main axis
+  .{$prefix}justify{$separator}start{$postfix} {
+    justify-content: flex-start;
+  }
+
+  .{$prefix}justify{$separator}center{$postfix}, .{$prefix}center{$separator}center{$postfix} {
+    justify-content: center;
+  }
+
+  .{$prefix}justify{$separator}end{$postfix} {
+    justify-content: flex-end;
+  }
+
+  .{$prefix}justify{$separator}around{$postfix} {
+    justify-content: space-around;
+  }
+
+  .{$prefix}justify{$postfix} {
+    justify-content: space-between;
+  }
+
+  .{$prefix}relative {
+    position: relative;
+  }
+
+  .{$prefix}scroll {
+    overflow: auto;
+  }
+
+  .{$prefix}no{$separator}scroll {
+    overflow: hidden;
+  }
+}
