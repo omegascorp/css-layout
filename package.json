@@ -1,0 +1,23 @@
+{
+  "name": "css-layout",
+  "version": "1.0.0",
+  "description": "Responsive layout, grid, flex, spaces.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omegascorp/css-layout.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/omegascorp/css-layout/issues"
+  },
+  "homepage": "https://github.com/omegascorp/css-layout#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-stylus": "^2.6.0"
+  }
+}

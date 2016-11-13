@@ -46,8 +46,8 @@ make-layout($prefix, $separator, $postfix) {
 
     // 12 column grid
     .{$prefix}grid{$separator}{$i}{$postfix} {
-      flex-basis: 100% / 12 * $i;
-      max-width: 100% / 12 * $i;
+      flex-basis: (100 / 12 * $i) %;
+      max-width: (100 / 12 * $i) %;
     }
   }
 
@@ -56,7 +56,7 @@ make-layout($prefix, $separator, $postfix) {
   }
 
   .{$prefix}grow{$separator}none{$postfix} {
-    flex-grow: none;
+    flex-grow: initial;
   }
 
   .{$prefix}shrink{$postfix} {
@@ -64,7 +64,7 @@ make-layout($prefix, $separator, $postfix) {
   }
 
   .{$prefix}shrink{$separator}none{$postfix} {
-    flex-shrink: none;
+    flex-shrink: initial;
   }
 
   // alignment in cross axis
@@ -105,15 +105,11 @@ make-layout($prefix, $separator, $postfix) {
     justify-content: space-between;
   }
 
-  .{$prefix}relative {
-    position: relative;
-  }
-
-  .{$prefix}scroll {
+  .{$prefix}scroll{$postfix} {
     overflow: auto;
   }
 
-  .{$prefix}no{$separator}scroll {
+  .{$prefix}no{$separator}scroll{$postfix} {
     overflow: hidden;
   }
 }
