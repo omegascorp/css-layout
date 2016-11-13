@@ -112,4 +112,80 @@ make-layout($prefix, $separator, $postfix) {
   .{$prefix}no{$separator}scroll{$postfix} {
     overflow: hidden;
   }
+
+  for $size in $space-sizes {
+    .{$prefix}padding{$separator}{$size}{$postfix} {
+      padding: $size;
+    }
+
+    .{$prefix}padding{$separator}h{$separator}{$size}{$postfix} {
+      padding-left: $size;
+      padding-right: $size;
+    }
+
+    .{$prefix}padding{$separator}v{$separator}{$size}{$postfix} {
+      padding-top: $size;
+      padding-bottom: $size;
+    }
+
+    .{$prefix}padding{$separator}t{$separator}{$size}{$postfix} {
+      padding-top: $size;
+    }
+
+    .{$prefix}padding{$separator}b{$separator}{$size}{$postfix} {
+      padding-bottom: $size;
+    }
+
+    .{$prefix}padding{$separator}l{$separator}{$size}{$postfix} {
+      padding-left: $size;
+    }
+
+    .{$prefix}padding{$separator}r{$separator}{$size}{$postfix} {
+      padding-right: $size;
+    }
+      
+    .{$prefix}margin{$separator}{$size}{$postfix} {
+      margin: $size;
+    }
+
+    .{$prefix}margin{$separator}h{$separator}{$size}{$postfix} {
+      margin-left: $size;
+      margin-right: $size;
+    }
+
+    .{$prefix}margin{$separator}v{$separator}{$size}{$postfix} {
+      margin-top: $size;
+      margin-bottom: $size;
+    }
+
+    .{$prefix}margin{$separator}t{$separator}{$size}{$postfix} {
+      margin-top: $size;
+    }
+
+    .{$prefix}margin{$separator}b{$separator}{$size}{$postfix} {
+      margin-bottom: $size;
+    }
+
+    .{$prefix}margin{$separator}l{$separator}{$size}{$postfix} {
+      margin-left: $size;
+    }
+
+    .{$prefix}margin{$separator}r{$separator}{$size}{$postfix} {
+      margin-right: $size;
+    }
+
+    .{$prefix}space{$separator}h{$separator}{$size} {
+      margin-left: $size;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    .{$prefix}space{$separator}v{$separator}{$size} {
+      margin-top: $size;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
 }
