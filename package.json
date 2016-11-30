@@ -1,22 +1,22 @@
 {
-  "name": "css-layout",
+  "name": "ghost-layout",
   "version": "1.0.0",
-  "description": "Responsive layout, grid, flex, spaces.",
+  "description": "Responsive classes for flexbox layouts, grids and spaces.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/omegascorp/css-layout.git"
+    "url": "git+https://github.com/omegascorp/ghost-layout.git"
   },
-  "author": "",
+  "author": "omegascorp",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/omegascorp/css-layout/issues"
+    "url": "https://github.com/omegascorp/ghost-layout/issues"
   },
-  "homepage": "https://github.com/omegascorp/css-layout#readme",
-  "dependencies": {
+  "homepage": "https://github.com/omegascorp/ghost-layout#readme",
+  "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-stylus": "^2.6.0"
   }

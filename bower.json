@@ -1,0 +1,15 @@
+{
+  "name": "ghost-layout",
+  "description": "Responsive classes for flexbox layouts, grids and spaces.",
+  "main": "index.js",
+  "authors": [
+    "omegascorp"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/omegascorp/ghost-layout",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
