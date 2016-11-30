@@ -2,6 +2,20 @@
 
 Responsive classes for flexbox layout, grid and spaces.
 
+## Install
+
+### NPM
+
+```
+npm install ghost-layout
+```
+
+### Bower
+
+```
+bower install ghost-layout
+```
+
 ## Layout
 
 
