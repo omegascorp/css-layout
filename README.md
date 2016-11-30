@@ -94,3 +94,27 @@ Default set of space sizes:
 .space-h-{size} - adds horizontal space between elements
 .space-v-{size} - adds vertical space between elements
 ```
+
+## Responsive modifiers
+
+Each class can be used with display size modifier.
+There is two types of modifiers lte (less then or equal) and gt (greater than).
+And here is the list of screen sizes:
+
+```
+xxs = 480px;
+xs = 768px;
+s = 1024px;
+m = 1280px;
+l = 1440px;
+xl = 1920px;
+xxl = 2560px;
+```
+
+Example:
+
+```
+class="layout-v-xxs-lte layout-h-xxs-gt"  
+```
+
+This means for the screen size <= 480px layout will vertical, for screen size > 480px layout will be horizontal
